@@ -1,0 +1,25 @@
+{
+  "projectName": "CSGO_Style_FPS",
+  "engine": "Unity",
+  "unityVersion": "2022.3.15f1",
+  "renderPipeline": "URP",
+  "targetPlatform": "PC",
+  "physics": {
+    "gravity": -9.81,
+    "timeScale": 1.0
+  },
+  "gameConfig": {
+    "maxPlayers": 10,
+    "roundTimeLimit": 115,
+    "buyTimeLimit": 15,
+    "startingMoney": 800,
+    "terroristSpawnPoints": 5,
+    "ctSpawnPoints": 5
+  },
+  "economy": {
+    "failureBonusStart": 1400,
+    "failureBonusIncrement": 500,
+    "winKillAll": 3250,
+    "winDefuse": 3500
+  }
+}

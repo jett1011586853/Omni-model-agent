@@ -1,0 +1,53 @@
+{
+  "model": {
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "max_output_tokens": 250000,
+    "context_window_tokens": 260000,
+    "request_timeout_seconds": 7200,
+    "history_safety_margin_tokens": 4096,
+    "chars_per_token_estimate": 4.0
+  },
+  "planner": {
+    "max_steps": 12,
+    "max_output_tokens": 2048,
+    "temperature": 0.2
+  },
+  "agent": {
+    "system_prompt": "You are a practical engineering task agent. Make plans, execute them with tools, keep task state consistent, and produce grounded results. 请用中文回答。涉及数学公式时使用 Unicode 或普通文本，不要使用 LaTeX。",
+    "max_tool_rounds": 24,
+    "max_history_messages": 24,
+    "max_execution_steps": 12
+  },
+  "storage": {
+    "state_dir": ".agent_state",
+    "recent_task_limit": 5,
+    "memory_search_limit": 6
+  },
+  "web_search": {
+    "max_results": 5,
+    "region": "cn-zh",
+    "safesearch": "moderate"
+  },
+  "streaming": {
+    "show_reasoning": true,
+    "show_answer": true,
+    "show_tool_events": true,
+    "show_usage": true
+  },
+  "agentos": {
+    "enabled": true,
+    "router_enabled": true,
+    "critic_enabled": true,
+    "verifier_enabled": true,
+    "compressor_enabled": true,
+    "supervisor_enabled": true,
+    "supervisor_max_cycles": 8,
+    "supervisor_pump_limit": 64,
+    "default_retry_budget": 1,
+    "default_tool_call_budget": 48,
+    "default_child_agent_budget": 24,
+    "default_token_budget": 510000,
+    "compressor_trigger_chars": 2500
+  }
+}

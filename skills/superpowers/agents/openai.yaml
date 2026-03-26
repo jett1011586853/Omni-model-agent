@@ -1,0 +1,3 @@
+display_name: Superpowers
+short_description: Apply a high-leverage engineering loop: scout, slice, execute, verify, repair, and report.
+default_prompt: Use a disciplined engineering workflow to complete this task in small verified slices.

@@ -1,0 +1,3 @@
+display_name: Planning With Files
+short_description: Use file-backed plans, checkpoints, and small slices for longer engineering tasks.
+default_prompt: Plan and execute this task in small file-backed slices with clear checkpoints.
